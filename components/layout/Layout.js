@@ -1,0 +1,17 @@
+import { Main } from 'next/document'
+import React from 'react'
+//Components
+import MainHeader from './MainHeader'
+
+const Layout = (props) => {
+  return (
+    <>
+        <MainHeader />
+        <main>
+            {props.children}
+        </main>
+    </>
+  )
+}
+
+export default Layout
